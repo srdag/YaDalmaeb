@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.dp
 fun MyButton(
     modifier: Modifier = Modifier,
     text: String = "example",
+    color: Color = Color.Yellow,
     onClick: () -> Unit = {},
 ) {
 
@@ -32,7 +33,7 @@ fun MyButton(
         modifier = modifier
             .fillMaxWidth()
             .height(50.dp),
-        colors = ButtonDefaults.buttonColors(Color.Yellow, Color.Black),
+        colors = ButtonDefaults.buttonColors(color, Color.Black),
         border = BorderStroke(2.dp, Color.Black),
         shape = RoundedCornerShape(10.dp),
         onClick = onClick
